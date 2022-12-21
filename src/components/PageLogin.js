@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from "react-router-dom";
 
 import '../css/Login.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -7,7 +8,7 @@ import axios from 'axios'
 
 import Cookies from 'universal-cookie'
 
-const urlLogin = "http://localhost:9000/api/usuarios"
+const urlLogin = "https://backend-mysql-ciclo4-production.up.railway.app/api/usuarios"
 
 
 const cookies = new Cookies();
@@ -90,6 +91,9 @@ class PageLogin extends Component {
                             />
                             <br />
                             <button className="btn btn-primary botonLogin" onClick={() => this.iniciarSesion()}>Iniciar Sesión</button>
+                            <br />
+                            <Link className="nav-link  enlace-registro" aria-current="page" to='/PageRegistro'>Realizar registro</Link>
+
                         </div>
                     </div>
                 </div>

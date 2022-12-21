@@ -32,14 +32,14 @@ class MenuInicial extends Component{
     cookies.remove("usu_email",{path:"/"})
     cookies.remove("usu_nombres",{path:"/"})
     cookies.remove("usu_apellidos",{path:"/"})
-    //window.location.href="./"
+    window.location.href="./"
     this.setState({estaLogin:false})
   }
     render(){
         return <nav className="navbar navbar-expand-lg bg-dark">
         <div className="container-fluid">
           <Link className="navbar-brand text-light" to={"/"}>
-          <img src="./icons/icons8-trofeo-100.png" alt="asdas" width={70}></img>
+          <img src="./icons/icons8-trofeo-100.png" alt="Logo deporte" width={70}></img>
           </Link>
           <button className="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon text-light"></span>
@@ -58,6 +58,12 @@ class MenuInicial extends Component{
               </li>
               <li className="nav-item" hidden={!this.state.esAdmin}>
                 <Link className="nav-link text-light" aria-current="page" to='/PageUsuarios'>Usuarios</Link>
+              </li>
+              <li className="nav-item" hidden={!this.state.esAdmin}>
+                <Link className="nav-link text-light" aria-current="page" to='/PageDeportes'>Deportes</Link>
+              </li>
+              <li className="nav-item" hidden={!this.state.esAdmin}>
+                <Link className="nav-link text-light" aria-current="page" to='/PageEquipos'>Equipos</Link>
               </li>
               <li className="nav-item" hidden={!this.state.estaLogin}>
                 <Link className="nav-link text-light" onClick={()=>this.cerrarSesion()} to='/'>Salir</Link>

@@ -1,14 +1,4 @@
-.containerPrincipal {
-    position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      border: 1px solid blue;
-      padding: 40px;
-      background-color: white;
-      width: 30rem;
-      height: 50vh;
-  }
+
   
   .containerSecundario{
     text-align: center;
@@ -29,3 +19,17 @@
   .inputLogin{
     height: 3rem;
   }
+  
+  .enlace-registro{
+    color: rgb(17, 17, 193);
+    margin-top: 25px;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .enlace-registro:hover{
+    color: blue;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+

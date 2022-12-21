@@ -9,6 +9,7 @@ import PageInicio from "./components/PageInicio.js"
 import PageLogin from "./components/PageLogin.js"
 import PageLogout from "./components/PageLogout.js"
 import PageUsuarios from "./components/PageUsuarios.js"
+import PageRegistro from "./components/PageRegistro.js"
 
 class App extends Component {
   render() {
@@ -35,6 +36,9 @@ class App extends Component {
           <Route path="/PageLogout" element={<PageLogout />}/>
           <Route path="/PageEventos" element={<PageEventos />}/>
           <Route path="/PageUsuarios" element={<PageUsuarios />}/>
+          <Route path="/PageDeportes" element={<PageDeportes />}/>
+          <Route path="/PageEquipos" element={<PageEquipos />}/>
+          <Route path="/PageRegistro" element={<PageRegistro />}/>
         </Routes>
       </Router>
     </div>;

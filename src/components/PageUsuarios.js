@@ -5,7 +5,7 @@ import { faEdit, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import { Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
 import { Component } from 'react';
 
-const url = 'http://localhost:9000/api/usuarios'
+const url = 'https://backend-mysql-ciclo4-production.up.railway.app/api/usuarios'
 const field_id = '/usu_id/'
 
 class PageUsuarios extends Component{

@@ -1,0 +1,39 @@
+.containerPrincipal {
+  margin-top: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid blue;
+  padding: 40px;
+  background-color: white;
+  width: 30rem;
+  height: auto;
+}
+  
+  .containerSecundario{
+    text-align: center;
+  }
+
+  .pantalla_login{
+    width: 100vw;
+    height: 86.5vh;
+    background-image: url('../../public/icons/deportes.jpg');
+  }
+  .botonLogin{
+    margin-top: 1.5rem;
+    width: 15rem;
+    height: 4rem;
+    background-color: rgb(30, 148, 181);
+  }
+
+  .inputLogin{
+    height: 3rem;
+  }
+
+  #root{
+    width: 100vw;
+  }
+  body{
+    width: 100vw;
+  }

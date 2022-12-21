@@ -1,3 +1,77 @@
 .tdCenter{
     text-align: center;
 }
+.banner{
+    width: 99vw;
+    height: 61vh;
+    filter: opacity(60%)
+}
+
+.table-without-margin{
+    margin-bottom: 0;
+}
+
+.register-button{
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    width: 15rem;
+    height: 3rem;
+    background-color: rgba(245, 240, 240, 0.822);
+    color: rgb(0, 0, 0);
+    border: 3px solid rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.register-button:hover{
+    color: rgb(18, 126, 175);
+    background-color: rgb(245, 240, 240);
+}
+
+.contenedorFiltros{
+    display: flex;
+    align-items: center;
+}
+.filtrosDeporte{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    width: 15rem;
+    height: 10rem;
+    text-align: center;
+}
+
+.filtrosDeporte img{
+    width: 3rem;
+}
+
+.filtrosDeporte:hover{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(32, 147, 192);
+    background-color: rgb(206, 199, 199);
+    width: 15rem;
+    height: 10rem;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .register-button{
+        position: absolute;
+        top: 100%;
+        left: 30%;
+        width: 15rem;
+        height: 3rem;
+        background-color: rgba(245, 240, 240, 0.822);
+        color: rgb(0, 0, 0);
+        border: 3px solid rgb(0, 0, 0);
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+  }
